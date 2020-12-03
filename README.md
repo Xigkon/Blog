@@ -1,5 +1,4 @@
-# Wellcome to my Blog
+# 欢迎
 
-Record my learning and thinking
 
-> Please here https://xigkon.github.io/Blog/
+> 移步 https://xigkon.github.io/Blog/
