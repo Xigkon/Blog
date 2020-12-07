@@ -1,0 +1,11 @@
+<div class= "header-left">
+    <img src="/assets/q.jpg" height="40" width="40" />
+    <div class="header-left-title">{{title}}</div>
+</div>
+<div class="header-right">
+    <div *ngFor="let item of navigations" 
+        class="header-nav-item"
+        [routerLink]="item.url">
+        {{item.text}}
+    </div>
+</div>
