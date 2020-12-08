@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ArticlesService } from "../../services/articles/articles.service";
 
 @Component({
   selector: 'app-back-end',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BackEndComponent implements OnInit {
 
-  constructor() { }
+  articles=[];
+  category = "backend";
+
+  constructor(private articlesService: ArticlesService) {
+    this.articles = articlesService.getArticles(this.category);
+    console.log(this.articles);
+  }
 
   ngOnInit(): void {
   }
+
+
 
 }

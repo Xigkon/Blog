@@ -1,0 +1,29 @@
+@import "src/app/styles/mixins.scss";
+@import "src/app/styles/props.scss";
+
+
+:host{
+    //@include flex(start, space-between);
+  //  @include padding(0 45);
+//    @include border(1px solid $gainsboro);
+    display: flex;
+    height: 60px;
+    background-color: $white;
+    height: 100%;
+    
+}
+
+.side-bar{
+    display: flex;
+    flex-flow: column nowrap;
+    border-right: 1px solid $gainsboro;
+    width: 250px;
+    height: 100%;
+    .side-bar-item{
+        padding: 12px 27px;
+    }
+    .side-bar-item:first-child{
+        padding-top:30px;
+    }
+    //overflow: auto;
+}

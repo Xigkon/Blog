@@ -10,23 +10,23 @@ export class HeaderComponent implements OnInit {
   navigations = [
     {
       text: "Home",
-      url: "../home"
+      url: "home"
     },{
       text: "Front End",
-      url: "../frontend"
+      url: "frontend"
     },{
       text: "Back End",
-      url: "../backend"
+      url: "backend"
     },{
      text: "Basis",
-      url: "../basis" 
+      url: "basis" 
 
     },{
       text: "Tools",
-      url: "../tools"
+      url: "tools"
     },{
       text: "Idea",
-      url: "../idea"
+      url: "idea"
     }
   ]
 

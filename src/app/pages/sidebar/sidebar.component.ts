@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, ParamMap} from "@angular/router";
+
+
 
 @Component({
   selector: 'app-sidebar',
@@ -6,10 +9,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
+  article_path = "assets/article/";
+  url:any = 1
+  
 
-  constructor() { }
+  constructor() { 
+    
+  }
 
   ngOnInit(): void {
+
   }
+
+  
+
 
 }
