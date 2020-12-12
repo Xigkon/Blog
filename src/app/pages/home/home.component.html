@@ -1,1 +1,19 @@
-<p>home works!</p>
+<div class="outer">
+    <div class="inner">
+        <div class="home-title">{{title}}</div>
+        <div class="home-title-describe">{{titleDescribe}}</div>
+        <div class="home-items">
+              <div class="home-item" *ngFor="let item of homeItem">
+              <div class="home-item-title" >{{item.text}}</div>
+              <div class="home-item-time">{{item.time}}</div>
+            </div>
+
+        </div>
+
+        <div class="home-describe">
+            <div >{{homeDescribe1}}</div>
+            <div >{{homeDescribe2}}</div>
+        </div>
+
+    </div>
+</div>
