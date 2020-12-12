@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import "app/styles/mixins";
+@import "app/styles/props";
+//@import "app/components/flat-button/flat-button.directive";
+
+
+
+html, body {
+  @include fullScreen;
+  @include topLeft;
+  position: absolute;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+
+
+input {
+  border: 0;
+  outline: 0;
+
+  &::-ms-clear,
+  &::-ms-reveal {
+    display: none;
+  }
+}
+
+button {
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  word-break: keep-all;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

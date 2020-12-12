@@ -1,0 +1,5 @@
+<div class="side-bar">
+    <button class="side-bar-item" *ngFor="let item of getArticles()" (click)="setSelectArticle(item)">
+        {{item}}
+    </button>
+</div>

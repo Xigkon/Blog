@@ -1,0 +1,33 @@
+@import "src/app/styles/mixins.scss";
+@import "src/app/styles/props.scss";
+
+
+:host{
+    @include flex(center, space-between);
+    @include padding(0 30);
+    @include border(1px solid $gainsboro);
+    height: 60px;
+    background-color: $white;
+    font-size: 20px;
+}
+
+.header-right{
+    display: flex;
+
+    .header-nav-item{
+        margin-right: 30px;
+        font-size: 16px;
+    }
+    
+}
+
+.header-left{
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    margin-left: 30px;
+
+    .header-left-title{
+        margin-left: 13px;
+    }
+}

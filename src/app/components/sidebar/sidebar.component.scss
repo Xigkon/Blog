@@ -1,0 +1,19 @@
+@import "src/app/styles/mixins.scss";
+@import "src/app/styles/props.scss";
+
+:host{
+    display: flex;
+    flex-flow: column nowrap;
+    border-right: 1px solid $gainsboro;
+
+
+}
+
+.side-bar-item{
+
+    height: 30px;
+    width: 100%;
+    font-size: 1em;
+    line-height: 1.4;
+
+}

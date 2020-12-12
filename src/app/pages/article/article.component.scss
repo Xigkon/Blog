@@ -1,0 +1,27 @@
+@import "src/app/styles/mixins.scss";
+@import "src/app/styles/props.scss";
+
+:host{
+    display: flex;
+    height: calc(100% - 60px);
+    justify-content: space-between;
+
+}
+
+.side-bar{
+    flex: 0 0 250px;
+    overflow: auto;
+}
+
+.article-content{
+    overflow: auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    .article{
+        flex: 0 1 900px;
+        min-width: 600px;
+        align-items: center;
+    }
+}
